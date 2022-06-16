@@ -52,6 +52,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 8;
+  int deptCount = 0;
   int totalCoins = 10;
   int result = 0;
   int flutterCoins = 0;
@@ -133,7 +134,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 10,
               ),
               Text(
-                'Balance :$_counter coins(Debts : 0 coins)',
+                'Balance :$_counter coins(Debts : $deptCount coins)',
                 style: const TextStyle(fontSize: 20, color: Colors.black),
               ),
               const SizedBox(
@@ -464,6 +465,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           onTap: () {
                             setState(() {
                               _counter = _counter + 8;
+                              deptCount = deptCount + 8;
                             });
                           },
                           child: Container(
