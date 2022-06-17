@@ -170,7 +170,10 @@ class _MyHomePageState extends State<GameScreen> {
                                                     gamState.flutterCoins =
                                                         images[index]
                                                             .specificCoins;
-                                                    gamState.counter++;
+                                                    //gamState.counter++;
+                                                    gamState
+                                                        .increamentcounter();
+
                                                     print("hello");
                                                     // _counter = _counter * 3;
                                                   }
@@ -197,7 +200,9 @@ class _MyHomePageState extends State<GameScreen> {
                                                     gamState.random1Coins =
                                                         images[index]
                                                             .specificCoins;
-                                                    gamState.counter++;
+                                                    //gamState.counter++;
+                                                    gamState
+                                                        .increamentcounter();
                                                   }
                                                 }
                                               });
@@ -218,7 +223,9 @@ class _MyHomePageState extends State<GameScreen> {
                                                     gamState.random2Coins =
                                                         images[index]
                                                             .specificCoins;
-                                                    gamState.counter++;
+                                                    //gamState.counter++;
+                                                    gamState
+                                                        .increamentcounter();
                                                   }
                                                 }
                                               });
@@ -258,8 +265,9 @@ class _MyHomePageState extends State<GameScreen> {
                                                       images[index]
                                                           .specificCoins;
                                                   print("hello");
-                                                  gamState
-                                                      .counter--; //= _counter * 3;
+                                                  // gamState
+                                                  //     .counter--; //= _counter * 3;
+                                                  gamState.deCreamentCounter();
                                                 }
 
                                                 // totalCoins = totalCoins;
@@ -280,7 +288,8 @@ class _MyHomePageState extends State<GameScreen> {
                                                   gamState.random1Coins =
                                                       images[index]
                                                           .specificCoins;
-                                                  gamState.counter--;
+                                                  //gamState.counter--;
+                                                  gamState.deCreamentCounter();
                                                 }
                                               }
                                             });
@@ -297,7 +306,8 @@ class _MyHomePageState extends State<GameScreen> {
                                                   gamState.random2Coins =
                                                       images[index]
                                                           .specificCoins;
-                                                  gamState.counter--;
+                                                  //gamState.counter--;
+                                                  gamState.deCreamentCounter();
                                                 }
                                               }
                                             });

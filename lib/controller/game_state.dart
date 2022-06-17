@@ -9,4 +9,12 @@ class GameState {
   int random2Coins = 0;
   bool showKey = true;
   bool isPlayButton = true;
+
+  void increamentcounter() {
+    counter++;
+  }
+
+  void deCreamentCounter() {
+    counter--;
+  }
 }
